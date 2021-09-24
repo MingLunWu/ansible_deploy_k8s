@@ -1,0 +1,8 @@
+- name: Get K8S Node Info
+  command: kubectl get node
+  register: k8s_info
+  changed_when: true
+
+- name: Print Stdout
+  debug:
+    msg: "{{ k8s_info.stdout_lines }}"
