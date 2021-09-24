@@ -1,9 +1,6 @@
 - name: First Ansible Homework
-  vars:
-    env: "localhost"
-    action: "apply"
-    git_repo_dest: "~/Documents/ansible_k8s_material"
-  hosts: "{{ env }}"
+  # hosts: "{{ env }}"
+  hosts: "local"
 
   tasks:
     - name: Get K8S Node Info

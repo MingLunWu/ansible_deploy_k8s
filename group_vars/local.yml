@@ -1,0 +1,3 @@
+env: "localhost"
+action: "apply"
+git_repo_dest: "~/Documents/ansible_k8s_material"
